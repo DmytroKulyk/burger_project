@@ -1,0 +1,42 @@
+.footer{
+	width: 100%;
+	background: black;
+	height: 60px;
+}
+.footer__right{
+	float: right;
+	width: 50%;
+	text-align: right;
+	vertical-align: middle;
+}
+.footer__left{
+	width: 50%;	
+	float:left;
+}
+.footer__left-address{
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.footer__left-phone{
+	color: #e45028;
+}
+
+.footer__right_socials li{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.icon-fb, .icon-vk, .icon-tw, .icon-inst{
+	line-height: 2rem;
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	vertical-align: middle;
+	fill: #ffffff;
+	fill-opacity: .75;
+	 &:hover{
+	 	fill-opacity: 1;
+	 }
+}

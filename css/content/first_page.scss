@@ -15,7 +15,7 @@
 	opacity: .8; 
   }
 }
-
+// ====== Navigation on a right
 .navigation{
 	position: absolute;
 	right: 45px;
@@ -37,5 +37,44 @@
   &:first-child{
   	border: 1px solid #fff;
   }
+}
+
+.contant{
+	text-align: center;
+	margin: 0 auto;
+	position: relative; 
+	top: 30%; 
+	transform: translateY(-50%);
+}
+.content_wrap > *{
+	vertical-align: middle;
+}
+.content__img{
+	height: 450px;
+	width: 450px;
+}
+.drops{
+	position: absolute;
+	top: 30px;
+	width: 450px;
+	height: 360px;
+	margin-left: -20px;
+}
+.content_title-block{
+	display: inline-block;
+	text-align: left;
+}
+.content_title{
+	color: #f9b43b;
+	font-size: 72px;
+	font-family: 'gagalinregular';
+}
+.content_title-text{
+	color: #FFFFFF;
+	font-size: 62px;
+    font-family: 'lifehackmedium'
+}
+.content_pic{
+	display: inline-block;
 }
 

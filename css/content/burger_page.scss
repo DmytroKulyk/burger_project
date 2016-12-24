@@ -71,9 +71,11 @@
 .burger_composition_item{
    padding: 2px;
 }
-
-
-
+.burger_composition_item-title{
+font-family: 'ubunturegular';
+font-size: 14px;
+color: #2f3234;
+}
 
 .burgers_page_img, .burger_page_description{
 	display: inline-block;

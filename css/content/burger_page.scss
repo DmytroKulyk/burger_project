@@ -1,0 +1,152 @@
+#burger_page{
+	height: 100vh;
+    min-height: 650px;
+	background-image: -moz-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+    background-image: -ms-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+	position: relative;
+	text-align: center;
+}
+
+
+.burgers_page_content{
+	position: absolute; 
+	top: 50%; 
+	transform: translateY(-50%);
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+
+}
+
+.burger_item_composition{
+	position: absolute;
+	top: -63px;
+    left: 79px;
+	height: 90px;
+	width: 90px;
+	background: #e35028;
+	border-radius: 10px;
+	opacity: .7;
+    &:hover{
+    	opacity: 1;
+    }
+}
+
+
+
+.burger{
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+}
+.burger_item_composition-title{
+	color: #fff;
+	font-family: 'gagalinregular';
+	font-size: 14px;
+}
+.burger_composition_list{
+	position: absolute;
+	height: 330px;
+	width: 270px;
+	background: #ffffff;
+	margin-left: 85px;
+	margin-top: -83px;
+	text-align: justify;
+	text-align-last: justify;
+}
+
+.beef, .buns, .greens, .souse, .cocumber, .cheese{
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.burger_composition_item-title, .burger_composition_item-weight, .svg_pic{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.burger_composition_item{
+   padding: 2px;
+}
+
+
+
+
+.burgers_page_img, .burger_page_description{
+	display: inline-block;
+	width: 460px;
+    vertical-align: top;
+}
+.burger_page_description{
+	text-align: left;
+	margin-left: 30px;
+}
+.burger_page_title{
+	 font-family: 'gagalinregular';
+	 font-size: 70px;
+	 margin-bottom: 30px;
+	 color: #ffffff;
+}
+.burger_page_text{
+	font-family: 'ubuntulight';
+	font-size: 14px;
+	line-height: 2;
+}
+.burger_page_price, .burger_page_order{
+	display: inline-block;
+}
+.burger_page_price{
+	font-family: 'gagalinregular';
+	font-size: 70px;
+	color: #e35028;
+}
+.burger_page_order{
+	padding: 15px 30px;
+    background: #e45028;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: -10px;
+    &:hover {
+    	background: #c1401e;
+     }
+}
+
+.burger_page_calories{
+	position: relative;
+}
+
+.kkal{
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	top: -40px;
+	left: 80px;
+	opacity: .7;
+}
+.burger_page_calories_contents, {
+	position: absolute;
+	top: -18px;
+	left: 93px;
+	color: #fff;
+	font-family: 'gagalinregular';
+	font-size: 20px;
+	opacity: .7;
+}
+.burger_page_calories_contents_abriv{
+	position: absolute;
+	top: 20px;
+	left: 95px;
+	color: #fff;
+	font-family: 'gagalinregular';
+	font-size: 14px;
+	opacity: .7;
+}
+
+
+
+
+

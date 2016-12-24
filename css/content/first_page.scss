@@ -55,10 +55,10 @@
 }
 .drops{
 	position: absolute;
-	top: 30px;
-	width: 450px;
-	height: 360px;
-	margin-left: -20px;
+	top: 28px;
+    width: 466px;
+    height: 361px;
+    margin-left: -26px;
 }
 .content_title-block{
 	display: inline-block;
@@ -72,7 +72,8 @@
 .content_title-text{
 	color: #FFFFFF;
 	font-size: 62px;
-    font-family: 'lifehackmedium'
+    font-family: 'lifehackmedium';
+    word-spacing: 10px;
 }
 .content_pic{
 	display: inline-block;

@@ -16,10 +16,7 @@
 	background: url(../img/bg/bg_faces/female_1.png);
 }
 
-// .review_img_container{
-// 	height: 300px;
-// 	background: url(../img/bg/bg_faces/female_1.png);
-// }
+
  .review_list_item:nth-child(1){
  	background: url(../img/bg/bg_faces/female_1.png) center center;
  	background-size: cover;
@@ -52,6 +49,8 @@
  	background: url(../img/bg/bg_faces/male_5.png) center center;
  	background-size: cover;
  }
-
+.review_list_text{
+	color: #fff;
+}
 
 

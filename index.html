@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Burgers</title>
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -301,7 +302,11 @@
     		Team
     	</div>
     	<div class="team_page_accordion">
-    		<button class="team_accordion_btn">Nick Poll</button>
+    		<button class="team_accordion_btn">
+	    		<span class="team_carret">
+	    			<i class="fa fa-caret-down" aria-hidden="true"></i>
+	    		</span>
+    		Nick Poll</button>
     		<div class="team_accordion_block">
     			<div class="team_accordion_img">
     				<img class="team_accordion_photo" src="img/bg/bg_faces/team_accordion.png" alt="team_img">
@@ -310,10 +315,13 @@
     				Chef
     			</div>
     			<div class="team_accordion_description">
-    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nihil sint laudantium facere, accusantium beatae expedita possimus culpa, fugiat suscipit nam voluptas, animi dolore, deleniti ullam eos distinctio adipisci sit!
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nihil sint laudantium facere, accusantium beatae expedita possimus culpa.
     			</div>
             </div>
-    		<button class="team_accordion_btn">Adam Cern</button>
+    		<button class="team_accordion_btn">
+    			<span class="team_carret">
+	    			<i class="fa fa-caret-down" aria-hidden="true"></i>
+	    		</span>Adam Cern</button>
     		    <div class="team_accordion_block">
 	    			<div class="team_accordion_img">
 	    				<img class="team_accordion_photo" src="img/bg/bg_faces/team_accordion.png" alt="team_img">
@@ -322,10 +330,14 @@
 	    				Operator
 	    			</div>
 	    			<div class="team_accordion_description">
-	    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus iure accusamus asperiores dolore harum est quasi velit sit beatae. Ratione sed natus quo ipsum enim sunt, nostrum molestiae officia eligendi!
+	    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus iure accusamus asperiores dolore harum est quasi velit sit beatae. 
 	    	        </div>
     			</div>
-    		<button class="team_accordion_btn">Michail Nemov</button>
+    		<button class="team_accordion_btn">
+    			<span class="team_carret">
+	    			<i class="fa fa-caret-down" aria-hidden="true"></i>
+	    		</span>
+	    		Michail Nemov</button>
 	    		<div class="team_accordion_block">
 	    			<div class="team_accordion_img">
 	    				<img class="team_accordion_photo" src="img/bg/bg_faces/team_accordion.png" alt="team_img">
@@ -334,10 +346,13 @@
 	    				Owner
 	    			</div>
 	    			<div class="team_accordion_description">
-	    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cumque, atque ut minus, aliquid magnam quam accusantium dolores. Consequatur nihil, nobis rerum maiores illo deleniti! Optio, iure, debitis! Voluptatem, eos.
+	    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum cumque, atque ut minus, aliquid magnam quam accusantium dolores. 
 	    			</div>
 	    		</div>
-    		<button class="team_accordion_btn">Eren Go</button>
+    		<button class="team_accordion_btn">
+    			<span class="team_carret">
+	    			<i class="fa fa-caret-down" aria-hidden="true"></i>
+	    		</span>Eren Go</button>
 	    		<div class="team_accordion_block">
 	    			<div class="team_accordion_img">
 	    				<img class="team_accordion_photo" src="img/bg/bg_faces/team_accordion.png" alt="team_img">
@@ -346,7 +361,7 @@
 	    				Server
 	    			</div>
 	    			<div class="team_accordion_description">
-	    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, dolorem, numquam. Officia at aliquid recusandae, magni quis unde. Et veritatis placeat harum, nisi blanditiis. Hic, debitis. Totam, velit. Mollitia, inventore.
+	    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, dolorem, numquam. Officia at aliquid recusandae, magni quis unde. 
 	    			</div>
 	    		</div>
 
@@ -360,11 +375,177 @@
 
 
 
+
+
+<div id="menu_page">
+	
+	<div class="menu_title">
+	 	menu
+	</div>
+
+    <div class="menu_accordion">
+
+    	<button class="menu_accordion_btn menu_meat">
+    	 	 <span class="menu_accordion_btn-title">
+    			for meat eaters
+    		</span>
+    	</button>
+            <div class="menu_accordion_block">
+    		    <div class="menu_accordion_description">
+    		         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nihil sint laudantium facere, accusantium beatae expedita possimus culpa.
+    		        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, voluptates, enim! Quia maxime saepe quasi in earum accusantium, quisquam, eaque amet tenetur excepturi, ad omnis similique sit et repellendus velit.
+    		    </div>
+            </div>
+
+     	<button class="menu_accordion_btn menu_vegetarians">
+     	    <span class="menu_accordion_btn-title">
+    			for vegetarians
+    		</span>
+    	</button>
+    		<div class="menu_accordion_block">
+    			<div class="menu_accordion_description">
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nihil sint laudantium facere, accusantium beatae expedita possimus culpa.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta saepe ad, veritatis non, ea debitis facere sapiente praesentium harum sequi aspernatur ipsa adipisci reprehenderit repellat pariatur labore quidem distinctio placeat.
+    			</div>
+            </div>
+    
+		<button class="menu_accordion_btn menu_dietetic">
+		    <span class="menu_accordion_btn-title">
+	    		dietetic 
+	    	</span> 
+	    </button>
+	    	<div class="menu_accordion_block">
+	    		<div class="menu_accordion_description">
+	    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nihil sint laudantium facere, accusantium beatae expedita possimus culpa.
+	    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, nobis et. Nobis sed sapiente deleniti iure, quod eum perferendis labore, excepturi at asperiores iste veritatis velit ipsum voluptates atque tenetur!
+	    		</div>
+	        </div>
+	</div>
+</div>
+
  
 
+</div>
+
+<div id="reviews_page">
+	
+  <ul class="review_list">
+  	<li class="review_list_item">
+  		<div class="review_img_container">
+  			<img class="review_img" src="img/bg/bg_faces/female_1.png" alt="reviews_img">
+  		</div>
+  	</li>
+  	<li class="review_list_item">
+  		<div class="review_img_container">
+  			<img class="review_img" src="img/bg/bg_faces/female_2.png" alt="reviews_img">
+  		</div>	
+  	</li>
+  	<li class="review_list_item">
+  		<div class="review_img_container">
+  			<img class="review_img" src="img/bg/bg_faces/female_3.png" alt="reviews_img">
+  		</div>	
+  	</li>
+  	<li class="review_list_item">
+  		<div class="review_img_container">
+  			<img class="review_img" src="img/bg/bg_faces/male_1.png" alt="reviews_img">
+  		</div>	
+  	</li>
+  	<li class="review_list_item">
+  		<div class="review_img_container">
+  			<img class="review_img" src="img/bg/bg_faces/male_2.png" alt="reviews_img">
+  		</div>	
+  	</li>
+  	<li class="review_list_item">
+  		<div class="review_img_container">
+  			<img class="review_img" src="img/bg/bg_faces/male_3.png" alt="reviews_img">
+  		</div>	
+  	</li>
+  	<li class="review_list_item">
+  		<div class="review_img_container">
+  			<img class="review_img" src="img/bg/bg_faces/male_4.png" alt="reviews_img">
+  		</div>	
+  	</li>
+  	<li class="review_list_item">
+  		<div class="review_img_container">
+  			<img class="review_img" src="img/bg/bg_faces/male_5.png" alt="reviews_img">
+  		</div>	
+  	</li>
+
+  </ul>
 
 
-	</div>
+</div>
+
+
+
+<div id="contacts_page">
+<div class="contacts_container">
+  <div class="contacts_title">order delivery</div>
+	<form class="contacts_form" action="#">
+	    <div class="form_left">
+		    <div class="form_name">
+				<label for="name">Name</label>
+			 	<input type="text" name="name">
+			</div> 	
+			<div class="form_phone">
+				<label for="phone">Phone</label>
+			 	<input type="numbers" name="phone" value="+">
+			</div>
+	        <div class="form_street">
+			 	<label for="street">Street</label>
+				<input type="text" name="street">
+			</div>
+			<div class="form_house">
+				<label for="house">House</label>
+				<input type="text" name="house">
+			</div>
+			<div class="form_housing">
+				<label for="housing">Housing</label>
+				<input type="text" name="housing">
+			</div>
+			<div class="form_apartment">	
+				<label for="apartment">Apartment</label>
+				<input type="text" name="apartment">
+			</div>
+			<div class="form_flore">
+				<label for="flor">Flore</label>
+				<input type="text" name="flore">
+			</div>
+		</div>
+		<div class="form_right">
+			<div class="form_comments">	
+				<label for="comments">Comments</label>
+				<input type="textarea" name="comments">
+			</div>
+			<div class="form_change">
+				<input type="radio" name="pay" >	
+				<label for="pay">Need change</label>	
+			</div>
+			<div class="form_card">	
+				<input type="radio" name="pay" checked>
+				<label for="pay">Pay with card</label>	
+			</div>	
+			<div class="form_call">
+				<input type="checkbox" name="call" checked>		
+				<label for="call">Do not need callback</label>		
+			</div>
+			<div class="form_btn">
+				<input type="submit" value="Order">	
+				<input type="reset" value="Reset">
+			</div>	
+		</div>		
+	</form>
+</div>
+</div>
+
+
+
+
+<div id="map_page">	
+  
+</div>
+
+
 </div>
 
 
@@ -414,6 +595,18 @@
 	</div>
 </footer>
 
+<script>
+(function($) {
+var allPanels = $('.team_accordion_block').hide();
+$('.team_accordion_btn').click(function() {
+    allPanels.slideUp("slow");
+     $(this).next().slideDown();
+    return false;
+  });
+})(jQuery);
+</script>
+
 <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>

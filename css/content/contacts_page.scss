@@ -1,0 +1,131 @@
+#contacts_page{
+	height: 100vh;
+    min-height: 650px;
+	background: url("../img/bg/bg6.png") center center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.contacts_form{
+	
+	&:after{
+  content: "";
+  display: block;
+  clear: both; }
+}
+.contacts_title{
+	font-size: 72px;
+	font-family: 'gagalinregular';
+	color: #f9b43b;
+	margin-bottom: 90px;
+	text-align: center;
+}
+.contacts_container{
+	max-width: 940px;
+	text-align: left;
+	margin: 0 auto;
+	position: relative; 
+	top: 50%; 
+	transform: translateY(-50%);
+}
+
+
+.form_name, .form_phone, .form_house, .form_housing, .form_apartment, .form_flore{
+	display: inline-block;
+
+}
+.contacts_form label{
+	display: block;
+	font-family: 'ubuntulight';
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.contacts_form input{
+	height: 35px; 
+    border: 1px solid rgb(209, 207, 203); 
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+}
+.form_right{
+	float: right;
+
+}
+.form_left{
+	float: left;
+	margin-right: 20px;
+}
+.form_change, .form_card{
+	display: inline-block;
+}
+
+.form_change label, .form_card label, .form_call label{
+	display: inline;
+}
+
+.form_name input, .form_phone input{
+	width: 220px;
+	
+}
+.form_name{
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+.form_street input{
+	width: 467px;
+}
+.form_street{
+ margin-bottom: 15px;
+}
+.form_house input, .form_housing input, .form_apartment input, .form_flore input{
+	width: 100px;
+}
+.form_house, .form_housing, .form_apartment{
+       margin-right: 14px;
+}
+ .form_comments input{
+   width: 440px;
+   height: 110px;
+ }
+.form_comments{
+	margin-bottom: 15px;
+}
+.form_change *{
+	vertical-align: middle;
+}
+.form_card *{
+	vertical-align: middle;
+}
+.form_call *{
+	vertical-align: middle;
+}
+.form_change input, .form_card input{
+	margin-right: 15px;
+}
+
+.form_change label{
+	margin-right: 20px;
+}
+.form_btn input[type="submit"]{
+	color: white;
+	border-radius: 5px;
+	background-color: rgb(228, 80, 40);
+	width: 97px;
+  height: 35px;
+  &:focus { outline: none; }
+	padding: 0;
+    border: none;
+    margin-right: 20px;
+
+}
+
+.form_btn input[type="reset"]{
+	&:focus { outline: none; }
+	padding: 0;
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+

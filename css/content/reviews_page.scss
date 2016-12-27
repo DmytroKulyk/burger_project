@@ -11,5 +11,47 @@
 	display: inline-block;
 	overflow: hidden;
 	margin: -3px;
+	width: 25%;
+	height: 325px;
+	background: url(../img/bg/bg_faces/female_1.png);
 }
+
+// .review_img_container{
+// 	height: 300px;
+// 	background: url(../img/bg/bg_faces/female_1.png);
+// }
+ .review_list_item:nth-child(1){
+ 	background: url(../img/bg/bg_faces/female_1.png) center center;
+ 	background-size: cover;
+ }
+ .review_list_item:nth-child(2){
+ 	background: url(../img/bg/bg_faces/female_2.png) center center;
+ 	background-size: cover;
+ }
+ .review_list_item:nth-child(3){
+ 	background: url(../img/bg/bg_faces/female_3.png) center center;
+ 	background-size: cover;
+ }
+ .review_list_item:nth-child(4){
+ 	background: url(../img/bg/bg_faces/male_1.png) center center;
+ 	background-size: cover;
+ }
+ .review_list_item:nth-child(5){
+ 	background: url(../img/bg/bg_faces/male_2.png) center center;
+ 	background-size: cover;
+ }
+.review_list_item:nth-child(6){
+ 	background: url(../img/bg/bg_faces/male_3.png) center center;
+ 	background-size: cover;
+ }
+ .review_list_item:nth-child(7){
+ 	background: url(../img/bg/bg_faces/male_4.png) center center;
+ 	background-size: cover;
+ }
+ .review_list_item:nth-child(8){
+ 	background: url(../img/bg/bg_faces/male_5.png) center center;
+ 	background-size: cover;
+ }
+
+
 

@@ -28,6 +28,7 @@
 	position: relative; 
 	top: 50%; 
 	transform: translateY(-50%);
+	min-width: 970px;
 }
 
 
@@ -35,19 +36,65 @@
 	display: inline-block;
 
 }
-.contacts_form label{
+.label{
 	display: block;
 	font-family: 'ubuntulight';
 	font-size: 14px;
 	color: #fff;
 	margin-bottom: 10px;
 }
-.contacts_form input{
+.input{
 	height: 35px; 
     border: 1px solid rgb(209, 207, 203); 
 	border-radius: 5px;
 	background-color: rgb(255, 255, 255);
 }
+
+//  ======= radio checkbox
+input[type=radio], input[type=checkbox] {
+    display:none;
+}
+input[type=radio] + label:before {
+    content: "";  
+    display: inline-block;  
+    width: 15px;  
+    height: 15px;  
+    vertical-align:middle;
+    margin-right: 8px;  
+    background-color: rgb(255, 255, 255); 
+    border-radius: 50%;  
+}
+input[type=checkbox] + label:before {
+    content: "";  
+    display: inline-block;  
+    width: 15px;  
+    height: 15px;  
+    vertical-align:middle;
+    margin-right: 8px;  
+    background-color: rgb(255, 255, 255);  
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022"; /* Bullet */
+    color: #e35028;
+    background-color: #fff; 
+    font-size: 38px;
+    text-align: center;
+    line-height:17px;
+}
+input[type=checkbox]:checked + label:before {
+    content:"\2714"; /* Tick */
+    color: #e35028;
+    background-color: #fff; 
+    text-align:center;
+    line-height:17px;
+}
+
+.form_change, .form_card, .form_call {
+	margin-bottom: 20px;
+}
+
+
 .form_right{
 	float: right;
 

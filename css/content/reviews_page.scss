@@ -1,20 +1,21 @@
-#team_page{
+#reviews_page{
 	height: 100vh;
     min-height: 650px;
 	position: relative;
 }
 
-.revie_list{
+.review_list{
 	 min-width: 940px;
+	 font-size: 0;
 }
 .review_list_item{
 	display: inline-block;
 	overflow: hidden;
-	margin: -3px;
 	width: 25%;
-	height: 325px;
-	background: url(../img/bg/bg_faces/female_1.png);
+	height: 328px;
+	position: relative;
 }
+
 
 
  .review_list_item:nth-child(1){
@@ -49,8 +50,41 @@
  	background: url(../img/bg/bg_faces/male_5.png) center center;
  	background-size: cover;
  }
-.review_list_text{
+
+.review_text_container{
+	position:absolute;
+    top:0;
+    width:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    display:none;
+ }
+.review_list_text{ 
 	color: #fff;
+	font-size: 14px;
+	margin-right: 20px;
+	margin-left: 20px;
+	z-index: 100;
 }
-
-
+.review_list_item:hover .review_text_container{
+	display: block;
+}
+.review_list_text-title{
+	font-family: 'gagalinregular';
+	font-size: 14px;
+	margin-top: 50px;
+}
+.review_list_text p{
+	font-family: 'ubuntulight';
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.review_list_text-btn{
+	background: #2f3234;
+	&:focus { outline: none; };
+	border: none;
+	padding: 15px 20px;
+	border-radius: 5px;
+	text-transform: uppercase;
+}

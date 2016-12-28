@@ -4,6 +4,7 @@
 	background: url("../img/bg/bg1.png") center center;
 	background-size: cover;
 	position: relative;
+	z-index: 1;
 	  &:before {
     content: '';
 	position: absolute;
@@ -13,6 +14,7 @@
 	left: 0;
 	background-image: url(../img/bg/texture.png);
 	opacity: .8; 
+	z-index: -1;
   }
 }
 // ====== Navigation on a right
@@ -48,6 +50,9 @@
 }
 .content_wrap > *{
 	vertical-align: middle;
+}
+.content_wrap{
+	min-width: 970px;
 }
 .content__img{
 	height: 450px;

@@ -131,11 +131,11 @@ input[type=checkbox]:checked + label:before {
 .form_house, .form_housing, .form_apartment{
        margin-right: 14px;
 }
- .form_comments input{
+ .form_comments textarea{
    width: 440px;
    height: 110px;
  }
-.form_comments{
+.textarea{
 	margin-bottom: 15px;
 }
 .form_change *{

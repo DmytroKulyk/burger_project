@@ -22,6 +22,7 @@
 }
 .team_accordion_block{
 	min-width: 540px;
+	margin-bottom: 30px;
 }
 .team_page_title{
 	color: #f9b43b;
@@ -53,23 +54,26 @@
 }
 .team_accordion_description{
  font-family: 'ubuntulight';
- max-width: 300px;
+ max-width: 210px;
 }
 .team_accordion_title{
 	 font-family: 'ubuntubold';
+	 margin-bottom: 20px;
 }
 
 .team_accordion_img{
-  float: left;
+  display: inline-block;
   max-width: 150px;
   margin-right: 20px;
 }
 .team_accordion_photo{
-	height: 60px;
-	width: 60px;
+	height: 100px;
+    width: 100px;
 	border-radius: 50%;
 }
-
+.team_accordion_text{
+  display: inline-block;
+}
 
 
 

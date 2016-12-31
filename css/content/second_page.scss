@@ -10,7 +10,7 @@
 .about_page_content{
 	margin: 0 auto;
 	position: absolute; 
-	top: 40%; 
+	top: 39%; 
 	transform: translateY(-50%);
 }
 
@@ -18,7 +18,7 @@
 	font-size: 40px;
 	font-family: 'gagalinregular';
 	color: #2f3234;
-	margin-bottom: 80px;
+	margin-bottom: 105px;
 }
 
 .about_page_discription_items{
@@ -32,18 +32,19 @@
 	&:nth-child(2){
     margin-left: 30px;
     margin-right: 30px;
+
 	}
 }
 .discription_item-title{
 	font-family: 'lifehackmedium';
 	font-size: 24px;
-	
+	margin-bottom: 16px;
 	color: #2f3234;
 	word-spacing: 10px;
 }
 .hand, .meat, .salad{
-	height: 70px;
-	width: 70px;
+	height: 100px;
+    width: 100px;
 }
 
 .discription_item-text{

@@ -17,13 +17,14 @@
 	margin-right: auto;
 	left: 0;
 	right: 0;
-    min-width: 970px;
+    min-width: 970px;    
+    max-width: 940px;
 }
 
 .burger_item_composition{
 	position: absolute;
 	top: -63px;
-    left: 79px;
+    left: 0px;
 	height: 90px;
 	width: 90px;
 	background: #e35028;
@@ -50,17 +51,19 @@
 	height: 330px;
 	width: 270px;
 	background: #ffffff;
-	margin-left: 85px;
-	margin-top: -83px;
+	margin-left: 4px;
 	text-align: justify;
 	text-align-last: justify;
 	border-radius: 5px;
   	background-color: rgb(255, 255, 255);
   	opacity: 0.902;
   	left: 85px;
-    top: 21px;
+    top: -64px;
+    display: none;
 }
-
+.burger_composition_list-active{
+	display: block;
+}
 .beef, .buns, .greens, .souse, .cocumber, .cheese{
 	width: 40px;
 	height: 40px;
@@ -89,6 +92,9 @@ color: #2f3234;
 .burger_page_description{
 	text-align: left;
 	margin-left: 30px;
+}
+.burgers_page_img img{
+    margin-left: -30px;
 }
 .burger_page_title{
 	 font-family: 'gagalinregular';
@@ -129,14 +135,14 @@ color: #2f3234;
 	height: 60px;
 	width: 60px;
 	position: absolute;
-	top: -40px;
-	left: 80px;
+	top: -150px;
+	left: 0px;
 	opacity: .7;
 }
-.burger_page_calories_contents, {
+.burger_page_calories_contents {
 	position: absolute;
-	top: -18px;
-	left: 93px;
+	top: -128px;
+	left: 13px;
 	color: #fff;
 	font-family: 'gagalinregular';
 	font-size: 20px;
@@ -144,8 +150,8 @@ color: #2f3234;
 }
 .burger_page_calories_contents_abriv{
 	position: absolute;
-	top: 20px;
-	left: 95px;
+	top: -90px;
+	left: 15px;
 	color: #fff;
 	font-family: 'gagalinregular';
 	font-size: 14px;

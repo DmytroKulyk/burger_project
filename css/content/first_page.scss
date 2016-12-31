@@ -33,19 +33,22 @@
 }
 
 .content__img{
-	height: 450px;
-	width: 450px;
+    height: 423px;
+    width: 416px;
+    margin-top: -27px;
+    margin-left: 21px;
 }
 .drops{
 	position: absolute;
-	top: 28px;
-    width: 466px;
+	top: -10px;
+    width: 455px;
     height: 361px;
-    margin-left: -26px;
+    margin-left: -16px;
 }
 .content_title-block{
 	display: inline-block;
 	text-align: left;
+	margin-top: 11px;
 }
 .content_title{
 	color: #f9b43b;
@@ -64,9 +67,9 @@
 
 // ====== Navigation on a right
 .navigation{
-	position: absolute;
-    right: 0px;
-    top: 0px;
+        position: absolute;
+    right: 100px;
+    top: 180px;
     z-index: 3000;
 }
 .navigation_item{

@@ -1,7 +1,5 @@
-.map_page{
-	background: grey;
-	position: relative;
-	overflow: hidden;
-	box-sizing: border-box;
-
+.yandex_map{
+	width: 100%;
+	height: calc(100% - 60px);
+	
 }

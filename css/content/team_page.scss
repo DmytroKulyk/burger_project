@@ -1,6 +1,4 @@
-#team_page{
-	height: 100vh;
-    min-height: 650px;
+.team_page{
 	background: url("../img/bg/bg4.png") center center;
 	background-size: cover;
 	position: relative;
@@ -8,13 +6,12 @@
 
 
 .team_page_block{
-	height: 100vh;
-	min-width: 540px;
-	max-width: 540px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	min-width: 50%;
 	background: rgba(49, 52, 54, .8);
-    position: absolute; 
-    right: 0px;
-    top: 0;
     text-align: left;
 }
 
@@ -22,7 +19,7 @@
 	margin-left: 75px;
 }
 .team_accordion_block{
-	min-width: 540px;
+	min-width: 50%;
 	margin-bottom: 30px;
 }
 .team_page_title{

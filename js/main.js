@@ -51,14 +51,14 @@ $(".burger_item_composition").click(function(){
     $(".burger_composition_list").toggleClass("burger_composition_list-active");
 });
 
- var activeItem = $(".menu_accordion_item:first");
-    // $(activeItem).addClass('menu_accordion-active');
+ // var activeItem = $(".menu_accordion_item:first");
+ //    // $(activeItem).addClass('menu_accordion-active');
  
-    $(".menu_accordion_item").click(function(){
-        $(activeItem).animate({width: "80px"}, {duration:300, queue:false});
-        $(this).animate({width: "500px"}, {duration:300, queue:false});
-        activeItem = this;
-    });
+ //    $(".menu_accordion_item").click(function(){
+ //        $(activeItem).animate({width: "80px"}, {duration:300, queue:false});
+ //        $(this).animate({width: "500px"}, {duration:300, queue:false});
+ //        activeItem = this;
+ //    });
 
 
 $("#wrapper").fullpage();

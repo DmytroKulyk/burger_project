@@ -1,6 +1,4 @@
-#menu_page{
-	height: 100vh;
-    min-height: 650px;
+.menu_page{
 	background: url("../img/bg/bg5.jpg") center center;
 	background-size: cover;
 	position: relative;
@@ -15,59 +13,109 @@
 	font-size: 72px;
 	color: #fff;
 	float: left;
-	margin-top: 120px;
-    margin-left: 100px;
+	position: absolute;
+	left: 84px;
+    top: 26px;
 }
 
-.menu_accordion_list{
+.menu-acco{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
 	&:after{
   content: "";
   display: block;
   clear: both; }
 }
-.menu_accordion_item{
-   float: right;
-   display: block;
-   width: 80px;
-   border-left: 1px solid #fff;
-   height: 100vh;
+
+.menu-acco_item{
+	float: left;
+	height: 100%;
+	&:after{
+  content: "";
+  display: block;
+  clear: both; }
+  &_active{
+  	.menu-acco_trigger-text{
+  		color: #f9b43b;	
+  	}
+  	.menu-acco_content{
+  		width: 550px;
+  	}
+  }
+}
+.menu-acco_trigger{
+	height: 100%;
+	display: block;
+	width: 80px;
+	float: left;
+	position: relative;	
 }
 
+.menu-acco_item:first-child .menu-acco_trigger{
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.77), 
+      rgba(0, 0, 0, 0.77)
+    ), url('../img/burger_img/bg_menu_1.png');
+	  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.menu-acco_item:nth-child(2) .menu-acco_trigger{
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.77), 
+      rgba(0, 0, 0, 0.77)
+    ), url('../img/burger_img/bg_menu_2.png');
+	  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.menu-acco_item:last-child .menu-acco_trigger{
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.77), 
+      rgba(0, 0, 0, 0.77)
+    ), url('../img/burger_img/bg_menu_3.png');
+	
+}
 
-.menu_accordion_item-title{
+.menu-acco_trigger-text{
+	font-family: 'gagalinregular';
+	font-size: 40px;
 	color: #fff;
-    font-family: 'gagalinregular';
-    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    height: 80px;
+    margin-top: -40px;
+    white-space: nowrap;
+    width: 650px;
+    left: 50%;
+    margin-left: -312px;
+    transform: rotate(-90deg);
     text-align: center;
-    transform: rotate(270deg);
-    border: 1px solid white;
+}	
+
+.menu-acco_content{
+	background: rgba(47, 50, 52, 0.93);
+	width: 550px;
+	float: left;
+	height: 100%;
+	color: #fff;
+	overflow: hidden;
+	width: 0;
 }
 
-.menu_meat{
-	background: 
-	linear-gradient(rgba(4, 1, 5, 0.69),
-		            rgba(4, 1, 5, 0.69)
-		            ),
-	url(../img/burger_img/bg_menu_1.png) center center;
-}
-.menu_vegetarians{
-	background:
-	linear-gradient(rgba(4, 1, 5, 0.69),
-		            rgba(4, 1, 5, 0.69)
-		            ), url(../img/burger_img/bg_menu_2.png) center center;
-}
-.menu_dietetic{
-    background:
-    linear-gradient(rgba(4, 1, 5, 0.69),
-		            rgba(4, 1, 5, 0.69)
-		            ), url(../img/burger_img/bg_menu_3.png) center center;	
+.menu-acco__text{
+	width: 550px;
+	padding: 20px;
 }
 
-.menu_accordion-active{
-	width: 500px;
-}
-.menu_accordion_item-text{
-	display: none;
-}
+
+
+
+
+
+
+
 
 

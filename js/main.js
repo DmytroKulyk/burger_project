@@ -217,8 +217,46 @@ $(function(){
     });
 })
 
+//yandex map 
 
 
+$(function(){
+     ymaps.ready(init);
+    var myMap;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [37.773972, -122.431297],
+            zoom: 13,
+            controls : []
+        });
+
+        var coords = [
+            [37.793190,-122.396436],
+            [37.7600032,-122.421563],
+            [37.7858182,-122.463568],
+            [37.8074142,-122.41693],
+        ];
+
+var  myCollection = new ymaps.GeoObjectCollection({}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/map-marker.svg',
+        iconImageSize: [46, 57],
+        iconImageOffset: [-26, -52], //all placemarks are red
+       draggable: false // and draggable
+    });
+
+    for (var i = 0; i < coords.length; i++) {
+        myCollection.add(new ymaps.Placemark(coords[i]));
+    }
+
+    myMap.geoObjects.add(myCollection);
+   
+
+
+        myMap.behaviors.disable('scrollZoom');
+    }
+});
 
 
 

@@ -21,7 +21,7 @@
 	text-align: center;
 	margin: 0 auto;
 	position: relative; 
-	top: 30%; 
+	top: 50%; 
 	transform: translateY(-50%);
 	min-width: 970px;
     max-width: 940px;
@@ -65,19 +65,15 @@
 
 // ====== Navigation on a right
 .navigation{
-        position: absolute;
-    right: 100px;
-    top: 180px;
+    position: absolute;
+    right: 140px;
+	top: 100px;
     z-index: 3000;
 }
 .navigation_item{
 	margin-bottom: 5px;
 }
 
-
-.navigation_circle_active{
-	border: 1px solid #fff;
-}
 .navigation_circle{
     border-radius: 50%;
     width: 14px;
@@ -86,21 +82,32 @@
     border: 1px solid transparent;
     position: relative;
 }
-
-.active{
-   border: 1px solid #fff;
+.navigation_circle_active{
+	border: 1px solid #fff;
 }
 
 .navigation_circle span {
     content: "";
     text-align: center;
-    line-height: 120px;
     position: absolute;
  	width: 6px;
   	height: 6px;
     background: #fff;
     border-radius: 50%;
-    left: 30%;
-    top: 30%;
+    left: 25%;
+    top: 29%;
 }
-
+.errow{
+	height: 18px;
+    width: 40px;
+}
+.down_errow{
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	bottom: -100px;
+	transition: .3s;
+	&:hover{
+		bottom: -90px;
+	}
+}

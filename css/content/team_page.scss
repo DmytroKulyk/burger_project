@@ -14,14 +14,6 @@
 	background: rgba(49, 52, 54, .8);
     text-align: left;
 }
-
-.team_page_accordion{
-	margin-left: 75px;
-}
-.team_accordion_block{
-	min-width: 50%;
-	margin-bottom: 30px;
-}
 .team_page_title{
 	color: #f9b43b;
 	font-family: 'gagalinregular';
@@ -30,52 +22,81 @@
 	margin-top: 110px;
 	margin-bottom: 85px;
 }
-
-.team_accordion_btn{
+.team_acco{
+	margin-left: 75px;
+	min-width: 50%;
+	margin-bottom: 30px;
+}
+.team_acco__item{
+	margin-bottom: 20px;
+}
+.team_acco__trigger{
 	color: #fff;
 	font-family: 'gagalinregular';
 	font-size: 14px;
-	&:focus { outline: none; }
 	padding: 0;
-    border: none;
-    background: none;
     margin-bottom: 15px; 
     display: block; 
+    text-decoration: none;
+    position: relative;
+
+    &:before{
+    	content: "";
+    	display: block;
+    	position: absolute;
+    	left: -19px;
+    	top: 6px;
+    	width: 0;
+    	height: 0;
+    	border-top: 7px solid #f9b43b;
+        border-left: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
 }
-.team_carret{
-	margin-right: 10px;
-	color: #f9b43b;
+.team_acco__content{
+	display: none;
 }
-.team_accordion_title, .team_accordion_description{
+
+.team_acco__text{
+   display: inline-block;
+}
+.team_acco__title, .team_acco__text-content{
  color: #fff;
  font-size: 14px;
 }
-.team_accordion_description{
+.team_acco__text-content{
  font-family: 'ubuntulight';
  max-width: 210px;
+ display: inline-block;
 }
-.team_accordion_title{
+.team_acco__title{
 	 font-family: 'ubuntubold';
 	 margin-bottom: 20px;
 }
 
-.team_accordion_img{
+.team_acco__pic{
   display: inline-block;
     margin-right: 20px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
+    vertical-align: top;
 }
-.team_accordion_photo{
-	height: 100px;
-    width: 120px;
-    margin-left: -13px;
-}
-.team_accordion_text{
-  display: inline-block;
+.team-acco__img{
+	background: url(../img/bg/bg_faces/team_accordion.png) center center;
+	background-size: 133px;
+    height: 100px;
 }
 
+.team_acco__item-active .team_acco__trigger{
+  color:#f9b43b;
+&:before{
+	transform: rotate(180deg);
+	top: 0;
+}	
+}
 
 
 

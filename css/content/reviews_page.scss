@@ -80,9 +80,60 @@
 }
 .review_list_text-btn{
 	background: #2f3234;
-	&:focus { outline: none; };
-	border: none;
 	padding: 15px 20px;
 	border-radius: 5px;
 	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+}
+//   ====== fancybox
+.popup{
+	display: none;
+}
+.full_review{
+	padding: 25px 20px;
+	position: relative;	
+	color: #2f3234;
+}
+
+.full_review_title{
+	font-family: 'gagalinregular';
+	font-style: 14px;
+	margin-bottom: 25px;
+}
+.full_review_text{
+  font-family: 'ubuntulight';
+  line-height: 1.6;
+}
+
+.fancybox-overlay{
+	background: rgba(#2f3234, .92);
+}
+.fancybox-close{
+	display: none;
+}
+.full_review-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+}
+.full_review-close:hover {
+  opacity: 1;
+}
+.full_review-close:before, .full_review-close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 22px;
+  width: 3px;
+  background-color: #ec8468;
+}
+.full_review-close:before {
+  transform: rotate(45deg);
+}
+.full_review-close:after {
+  transform: rotate(-45deg);
 }

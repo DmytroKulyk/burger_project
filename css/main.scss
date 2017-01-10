@@ -8,7 +8,10 @@ $black: #2f3234;
 @import "layouts/ajustment";
 @import "layouts/fonts";
 @import "layouts/font-awesome";
-@import "layouts/jquery.fullPage";
+@import "layouts/jquery.fancybox";
+
+@import "../js/owl-carusel/owl.carousel.min";
+@import "../js/owl-carusel/owl.theme.default.min";
 
 // ====content
 

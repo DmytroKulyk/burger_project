@@ -36,14 +36,10 @@
   content: "";
   display: block;
   clear: both; }
-  &_active{
-  	.menu-acco_trigger-text{
-  		color: #f9b43b;	
-  	}
-  	.menu-acco_content{
-  		width: 550px;
-  	}
   }
+
+.menu-acco_item_active .menu-acco_trigger-text{
+    color: #f9b43b;
 }
 .menu-acco_trigger{
 	height: 100%;
@@ -97,8 +93,7 @@
 
 .menu-acco_content{
 	background: rgba(47, 50, 52, 0.93);
-	width: 550px;
-	float: left;
+	float: right;
 	height: 100%;
 	color: #fff;
 	overflow: hidden;

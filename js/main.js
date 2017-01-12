@@ -217,6 +217,39 @@ $(function(){
     });
 })
 
+// form submit
+
+$(function(){
+    $('#order-form').on('submit', function(e){
+        e.preventDefault();
+
+        var 
+            form = $(this),
+            formData = form.serialize();
+
+        $.ajax({
+            url : "mail.php",
+            type : 'POST',
+            data : formData,
+            success: function(data) {
+
+                if(data.status){
+                    console.log('it is true');
+                }else{
+                    console.log("it is false");
+                }
+
+                console.log(data, typeof data);
+            }
+        })
+    });
+});
+
+
+
+
+
+
 //yandex map 
 
 
@@ -257,6 +290,7 @@ var  myCollection = new ymaps.GeoObjectCollection({}, {
         myMap.behaviors.disable('scrollZoom');
     }
 });
+
 
 
 

@@ -165,6 +165,10 @@ input[type=checkbox]:checked + label:before {
     border: none;
     margin-right: 20px;
 
+    &:hover {
+    background: #c1401e;
+	}
+
 }
 
 .form_btn input[type="reset"]{

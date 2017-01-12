@@ -233,16 +233,33 @@ $(function(){
             data : formData,
             success: function(data) {
 
-                if(data.status){
-                    console.log('it is true');
-                }else{
-                    console.log("it is false");
-                }
+                var popup = data.status ? '#success' : '#error';
+
+                    $.fancybox.open([
+                        {href : popup}
+                        ], {
+                            type : 'inline',
+                            maxWidth : 250,
+                            minWidth : 200,
+                            minHeight : 105,
+                            fitToView: false,
+                            padding : 0,
+                            afterClose : function () {
+                                form.trigger('reset');
+                            }
+                        })
+            
 
                 console.log(data, typeof data);
             }
         })
     });
+
+    $('.status-popup__message-close').on('click', function(e){
+        e.preventDefault();
+
+        $.fancybox.close();
+    })
 });
 
 

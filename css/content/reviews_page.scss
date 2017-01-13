@@ -56,7 +56,8 @@
     width:100%;
     height:100%;
     background-color:rgba(0, 0, 0, 0.5);
-    display:none;
+    opacity: 0;
+    transition: .5s;
  }
 .review_list_text{ 
 	color: #fff;
@@ -66,7 +67,7 @@
 	z-index: 100;
 }
 .review_list_item:hover .review_text_container{
-	display: block;
+	opacity: 1;
 }
 .review_list_text-title{
 	font-family: 'gagalinregular';

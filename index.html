@@ -5,6 +5,8 @@
 	<title>Burgers</title>
 	<link rel="shortcut icon" href="img/burger.ico">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
@@ -212,84 +214,85 @@
 			         		</div>
 				         	    <ul class="burger_page-carusel owl-carousel">
 				         	    	<li class="burger_page-carusel__item">
-				         	    		<div class="burger_item_composition">
-					         	    	   <svg class="burger" >
-						            			<use xlink:href="img/sprite.svg#burger"/>
-						         			</svg>
-						         			<div class="burger_item_composition-title">
-						         			consist	
-						         			</div>
-						         				
-						         		</div> 	 
-						         			<ul class="burger_composition_list">
-						         				<li class="burger_composition_item">
-							         				<svg class="beef svg_pic" >
-							            				<use xlink:href="img/sprite.svg#beef"/>
-							         			    </svg>
-							         			    <div class="burger_composition_item-title">
-							         			    	beef
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	300g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="buns svg_pic" >
-							            				<use xlink:href="img/sprite.svg#buns"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	buns
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	250g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="greens svg_pic" >
-							            				<use xlink:href="img/sprite.svg#salad"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	salad
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	300g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="souse svg_pic" >
-							            				<use xlink:href="img/sprite.svg#souse"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	souse
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	80g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="cocumber svg_pic" >
-							            				<use xlink:href="img/sprite.svg#cocumber"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	vegetables
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	150g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="cheese svg_pic" >
-							            				<use xlink:href="img/sprite.svg#cheese"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	cheese
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	100g
-							         			    </div>
-						         				</li>
-						         			</ul>
-					         			
+					         	    	<div class="burger_composition-window">
+					         	    		<div class="burger_item_composition">
+						         	    	   <svg class="burger" >
+							            			<use xlink:href="img/sprite.svg#burger"/>
+							         			</svg>
+							         			<div class="burger_item_composition-title">
+							         			consist	
+							         			</div>
+							         				
+							         		</div> 	 
+							         			<ul class="burger_composition_list">
+							         				<li class="burger_composition_item">
+								         				<svg class="beef svg_pic" >
+								            				<use xlink:href="img/sprite.svg#beef"/>
+								         			    </svg>
+								         			    <div class="burger_composition_item-title">
+								         			    	beef
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	300g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="buns svg_pic" >
+								            				<use xlink:href="img/sprite.svg#buns"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	buns
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	250g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="greens svg_pic" >
+								            				<use xlink:href="img/sprite.svg#salad"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	salad
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	300g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="souse svg_pic" >
+								            				<use xlink:href="img/sprite.svg#souse"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	souse
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	80g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="cocumber svg_pic" >
+								            				<use xlink:href="img/sprite.svg#cocumber"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	vegetables
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	150g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="cheese svg_pic" >
+								            				<use xlink:href="img/sprite.svg#cheese"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	cheese
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	100g
+								         			    </div>
+							         				</li>
+							         			</ul>
+						         		</div>	
 
 				         	    		<div class="burgers_page_img">
 					        				<img src="img/burger_img/burger_black.png" alt="burger">
@@ -321,83 +324,85 @@
 					                    </div>
 				         	    	</li>
 				         	    	<li class="burger_page-carusel__item">
-				         	    		<div class="burger_item_composition">
-					         	    	   <svg class="burger" >
-						            			<use xlink:href="img/sprite.svg#burger"/>
-						         			</svg>
-						         			<div class="burger_item_composition-title">
-						         			consist	
-						         			</div>
-						         				
-						         		</div> 	 
-						         			<ul class="burger_composition_list">
-						         				<li class="burger_composition_item">
-							         				<svg class="beef svg_pic" >
-							            				<use xlink:href="img/sprite.svg#beef"/>
-							         			    </svg>
-							         			    <div class="burger_composition_item-title">
-							         			    	beef
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	300g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="buns svg_pic" >
-							            				<use xlink:href="img/sprite.svg#buns"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	buns
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	250g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="greens svg_pic" >
-							            				<use xlink:href="img/sprite.svg#salad"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	salad
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	300g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="souse svg_pic" >
-							            				<use xlink:href="img/sprite.svg#souse"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	souse
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	80g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="cocumber svg_pic" >
-							            				<use xlink:href="img/sprite.svg#cocumber"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	vegetables
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	150g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="cheese svg_pic" >
-							            				<use xlink:href="img/sprite.svg#cheese"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	cheese
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	100g
-							         			    </div>
-						         				</li>
-						         			</ul>
+					         	    	<div class="burger_composition-window">
+						         	    		<div class="burger_item_composition">
+							         	    	   <svg class="burger" >
+								            			<use xlink:href="img/sprite.svg#burger"/>
+								         			</svg>
+								         			<div class="burger_item_composition-title">
+								         			consist	
+								         			</div>
+								         				
+								         		</div> 	 
+								         			<ul class="burger_composition_list">
+								         				<li class="burger_composition_item">
+									         				<svg class="beef svg_pic" >
+									            				<use xlink:href="img/sprite.svg#beef"/>
+									         			    </svg>
+									         			    <div class="burger_composition_item-title">
+									         			    	beef
+									         			    </div>
+									         			    <div class="burger_composition_item-weight">
+									         			    	300g
+									         			    </div>
+								         				</li>
+								         				<li class="burger_composition_item">
+								         					<svg class="buns svg_pic" >
+									            				<use xlink:href="img/sprite.svg#buns"/>
+									         			    </svg>
+									         			     <div class="burger_composition_item-title">
+									         			    	buns
+									         			    </div>
+									         			    <div class="burger_composition_item-weight">
+									         			    	250g
+									         			    </div>
+								         				</li>
+								         				<li class="burger_composition_item">
+								         					<svg class="greens svg_pic" >
+									            				<use xlink:href="img/sprite.svg#salad"/>
+									         			    </svg>
+									         			     <div class="burger_composition_item-title">
+									         			    	salad
+									         			    </div>
+									         			    <div class="burger_composition_item-weight">
+									         			    	300g
+									         			    </div>
+								         				</li>
+								         				<li class="burger_composition_item">
+								         					<svg class="souse svg_pic" >
+									            				<use xlink:href="img/sprite.svg#souse"/>
+									         			    </svg>
+									         			     <div class="burger_composition_item-title">
+									         			    	souse
+									         			    </div>
+									         			    <div class="burger_composition_item-weight">
+									         			    	80g
+									         			    </div>
+								         				</li>
+								         				<li class="burger_composition_item">
+								         					<svg class="cocumber svg_pic" >
+									            				<use xlink:href="img/sprite.svg#cocumber"/>
+									         			    </svg>
+									         			     <div class="burger_composition_item-title">
+									         			    	vegetables
+									         			    </div>
+									         			    <div class="burger_composition_item-weight">
+									         			    	150g
+									         			    </div>
+								         				</li>
+								         				<li class="burger_composition_item">
+								         					<svg class="cheese svg_pic" >
+									            				<use xlink:href="img/sprite.svg#cheese"/>
+									         			    </svg>
+									         			     <div class="burger_composition_item-title">
+									         			    	cheese
+									         			    </div>
+									         			    <div class="burger_composition_item-weight">
+									         			    	100g
+									         			    </div>
+								         				</li>
+								         			</ul>
+							         	</div>	
 					         			
 
 				         	    		<div class="burgers_page_img">
@@ -430,83 +435,85 @@
 					                    </div>
 				         	    	</li>
 				         	    	<li class="burger_page-carusel__item">
-				         	    		<div class="burger_item_composition">
-					         	    	   <svg class="burger" >
-						            			<use xlink:href="img/sprite.svg#burger"/>
-						         			</svg>
-						         			<div class="burger_item_composition-title">
-						         			consist	
-						         			</div>
-						         				
-						         		</div> 	 
-						         			<ul class="burger_composition_list">
-						         				<li class="burger_composition_item">
-							         				<svg class="beef svg_pic" >
-							            				<use xlink:href="img/sprite.svg#beef"/>
-							         			    </svg>
-							         			    <div class="burger_composition_item-title">
-							         			    	beef
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	300g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="buns svg_pic" >
-							            				<use xlink:href="img/sprite.svg#buns"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	buns
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	250g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="greens svg_pic" >
-							            				<use xlink:href="img/sprite.svg#salad"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	salad
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	300g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="souse svg_pic" >
-							            				<use xlink:href="img/sprite.svg#souse"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	souse
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	80g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="cocumber svg_pic" >
-							            				<use xlink:href="img/sprite.svg#cocumber"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	vegetables
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	150g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="cheese svg_pic" >
-							            				<use xlink:href="img/sprite.svg#cheese"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	cheese
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	100g
-							         			    </div>
-						         				</li>
-						         			</ul>
+				         	    		<div class="burger_composition-window">
+					         	    		<div class="burger_item_composition">
+						         	    	   <svg class="burger" >
+							            			<use xlink:href="img/sprite.svg#burger"/>
+							         			</svg>
+							         			<div class="burger_item_composition-title">
+							         			consist	
+							         			</div>
+							         				
+							         		</div> 	 
+							         			<ul class="burger_composition_list">
+							         				<li class="burger_composition_item">
+								         				<svg class="beef svg_pic" >
+								            				<use xlink:href="img/sprite.svg#beef"/>
+								         			    </svg>
+								         			    <div class="burger_composition_item-title">
+								         			    	beef
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	300g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="buns svg_pic" >
+								            				<use xlink:href="img/sprite.svg#buns"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	buns
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	250g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="greens svg_pic" >
+								            				<use xlink:href="img/sprite.svg#salad"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	salad
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	300g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="souse svg_pic" >
+								            				<use xlink:href="img/sprite.svg#souse"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	souse
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	80g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="cocumber svg_pic" >
+								            				<use xlink:href="img/sprite.svg#cocumber"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	vegetables
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	150g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="cheese svg_pic" >
+								            				<use xlink:href="img/sprite.svg#cheese"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	cheese
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	100g
+								         			    </div>
+							         				</li>
+							         			</ul>
+						         		</div>	
 					         			
 
 				         	    		<div class="burgers_page_img">
@@ -539,83 +546,85 @@
 					                    </div>
 				         	    	</li>
 				         	    	<li class="burger_page-carusel__item">
-				         	    		<div class="burger_item_composition">
-					         	    	   <svg class="burger" >
-						            			<use xlink:href="img/sprite.svg#burger"/>
-						         			</svg>
-						         			<div class="burger_item_composition-title">
-						         			consist	
-						         			</div>
-						         				
-						         		</div> 	 
-						         			<ul class="burger_composition_list">
-						         				<li class="burger_composition_item">
-							         				<svg class="beef svg_pic" >
-							            				<use xlink:href="img/sprite.svg#beef"/>
-							         			    </svg>
-							         			    <div class="burger_composition_item-title">
-							         			    	beef
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	300g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="buns svg_pic" >
-							            				<use xlink:href="img/sprite.svg#buns"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	buns
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	250g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="greens svg_pic" >
-							            				<use xlink:href="img/sprite.svg#salad"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	salad
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	300g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="souse svg_pic" >
-							            				<use xlink:href="img/sprite.svg#souse"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	souse
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	80g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="cocumber svg_pic" >
-							            				<use xlink:href="img/sprite.svg#cocumber"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	vegetables
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	150g
-							         			    </div>
-						         				</li>
-						         				<li class="burger_composition_item">
-						         					<svg class="cheese svg_pic" >
-							            				<use xlink:href="img/sprite.svg#cheese"/>
-							         			    </svg>
-							         			     <div class="burger_composition_item-title">
-							         			    	cheese
-							         			    </div>
-							         			    <div class="burger_composition_item-weight">
-							         			    	100g
-							         			    </div>
-						         				</li>
-						         			</ul>
+				         	    		<div class="burger_composition-window">
+					         	    		<div class="burger_item_composition">
+						         	    	   <svg class="burger" >
+							            			<use xlink:href="img/sprite.svg#burger"/>
+							         			</svg>
+							         			<div class="burger_item_composition-title">
+							         			consist	
+							         			</div>
+							         				
+							         		</div> 	 
+							         			<ul class="burger_composition_list">
+							         				<li class="burger_composition_item">
+								         				<svg class="beef svg_pic" >
+								            				<use xlink:href="img/sprite.svg#beef"/>
+								         			    </svg>
+								         			    <div class="burger_composition_item-title">
+								         			    	beef
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	300g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="buns svg_pic" >
+								            				<use xlink:href="img/sprite.svg#buns"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	buns
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	250g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="greens svg_pic" >
+								            				<use xlink:href="img/sprite.svg#salad"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	salad
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	300g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="souse svg_pic" >
+								            				<use xlink:href="img/sprite.svg#souse"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	souse
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	80g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="cocumber svg_pic" >
+								            				<use xlink:href="img/sprite.svg#cocumber"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	vegetables
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	150g
+								         			    </div>
+							         				</li>
+							         				<li class="burger_composition_item">
+							         					<svg class="cheese svg_pic" >
+								            				<use xlink:href="img/sprite.svg#cheese"/>
+								         			    </svg>
+								         			     <div class="burger_composition_item-title">
+								         			    	cheese
+								         			    </div>
+								         			    <div class="burger_composition_item-weight">
+								         			    	100g
+								         			    </div>
+							         				</li>
+							         			</ul>
+						         		</div>	
 					         			
 
 				         	    		<div class="burgers_page_img">
@@ -764,13 +773,10 @@
 			</section>
 
 
-
-
-
 			<section class="section menu_page" data-anchor="menu_page">
 				
 				<div class="menu_title">
-				 	<h2>menu<h2>
+				 	<h2>menu</h2>
 				</div>
 
 			    <ul class="menu-acco">
@@ -913,37 +919,37 @@
 					    <div class="form_left">
 						    <div class="form_name">
 								<label class="label" for="name">Name</label>
-							 	<input class="input" id="name" type="text" name="name">
+							 	<input class="input" id="name" type="text" data-error="Type name!" name="name">
 							</div> 	
 							<div class="form_phone">
 								<label class="label" for="phone">Phone</label>
-							 	<input class="input input_phone" id="number" type="text" name="phone">
+							 	<input class="input input_phone" id="phone" type="text" data-error="Type phone!" name="phone">
 							</div>
 					        <div class="form_street">
 							 	<label class="label" for="street">Street</label>
-								<input class="input" id="streer" type="text" name="street">
+								<input class="input" id="street" type="text" data-error="Type street!">
 							</div>
 							<div class="form_house">
 								<label class="label" for="house">House</label>
-								<input class="input" id="house" type="text" name="house">
+								<input class="input" id="house" type="text" data-error="Type house number!" name="house">
 							</div>
 							<div class="form_housing">
 								<label class="label" for="housing">Housing</label>
-								<input class="input" id="housing" type="text" name="housing">
+								<input class="input" id="housing" type="text" data-error="Type building!" name="housing">
 							</div>
 							<div class="form_apartment">	
 								<label class="label" for="apartment">Apartment</label>
-								<input class="input" id="apartment" type="text" name="apartment">
+								<input class="input" id="apartment" type="text" data-error="Type apartament number!" name="apartment">
 							</div>
 							<div class="form_flore">
 								<label class="label" for="floor">Floor</label>
-								<input class="input" id="floor" type="text" name="floor">
+								<input class="input" id="floor" type="text" data-error="Type floor!" name="floor">
 							</div>
 						</div>
 						<div class="form_right">
 							<div class="form_comments">	
 								<label class="label" for="comments">Comments</label>
-								<textarea class="textarea" id="comments" name="comment"></textarea>
+								<textarea class="textarea" id="comments" data-error="Type comments!" name="comment"></textarea>
 							</div>
 							<div class="form_change">
 								<input class="input" id="pay" type="radio" name="pay">	
@@ -1066,11 +1072,13 @@
 		<script type="text/javascript" src="js/jquery.inputmask.bundle.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.js"></script>
 
 		<script type="text/javascript" src="js/main.js"></script>
         
 	</body>
 </html>
+
 
 
 

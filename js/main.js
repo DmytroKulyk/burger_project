@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 
-$(".burger_item_composition").click(function(){
+$(".burger_composition-window").click(function(){
     $(".burger_composition_list").toggleClass("burger_composition_list-active");
 });
 
@@ -188,7 +188,7 @@ $(function(){
             $('.menu-acco_content').animate({
                 'width' : '0px'
             })
-            $('.menu-acco_content').removeClass('menu-acco_item_active');
+            $('.menu-acco_item').removeClass('menu-acco_item_active');
         }
     });
 
@@ -217,13 +217,18 @@ $(function(){
     });
 })
 
-// form submit
+// form validation and submit
 
-$(function(){
-    $('#order-form').on('submit', function(e){
-        e.preventDefault();
 
-        var 
+function valid() {
+    var regempty = new RegExp('([^\\s*]+)'),
+        regmail = new RegExp("/^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i"),
+        regphone = new RegExp('/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im'),
+
+    checkform = true;
+    var sendform = function (elem) {
+        console.log(elem.serialize());
+               var 
             form = $(this),
             formData = form.serialize();
 
@@ -253,18 +258,114 @@ $(function(){
                 console.log(data, typeof data);
             }
         })
-    });
+    };
+
 
     $('.status-popup__message-close').on('click', function(e){
         e.preventDefault();
 
         $.fancybox.close();
     })
+
+    var checkdata = function (elem) {
+            // 6. Принимаем каждый инпут или техтареа
+            // console.log("checkdata");
+            //7.Свитчем получаем атрибут инпута или техтареа, и вызываем соотвествующую функцию на проверку этого поля
+            switch ($(elem).attr("type")) {
+                case 'email':
+                    return checkmail(elem); // 8 функция возвращает true или false после проверки на регулярку
+                    break;
+                case 'tel':
+                    return checltel(elem); // 8 функция возвращает true или false после проверки на регулярку
+                    break;
+                default: //Если тип инпута не совпал с вышепереисленными, сработает функция ниже
+                    return checkother(elem); // 8 функция возвращает true или false после проверки на регулярку
+            }
+        },
+        checkmail = function (elem) {
+            if (!regmail.test(elem.value)) { //Если инпут не прошел валидацию
+                showtooltip(elem); // Отображает ошибку вызвав метод showtooltip
+                return false; // возвращаем false - что значит есть ошибка.
+            } else {
+                return true; //если проверка на регулярное выраженеи прошло успешно, значит инпут заполнен
+            }
+        },
+        checktel = function (elem) {
+            // console.log("Проверь телефон");
+            if (!regphone.test(elem.value)) { //Если инпут не прошел валидацию
+                showtooltip(elem); // Отображает ошибку вызвав метод showtooltip
+                return false; // возвращаем false - что значит есть ошибка.
+            } else {
+                return true; //если проверка на регулярное выраженеи прошло успешно, значит инпут заполнен
+            }
+        },
+        checkother = function (elem) {
+            if (!regempty.test(elem.value)) {
+                showtooltip(elem);
+                return false;
+            } else {
+                return true;
+            }
+        },
+        showtooltip = function (elem) {
+            console.log("show tooltip");
+            // console.log(elem);
+            $(elem).qtip({ // Grab some elements to apply the tooltip to
+                content: {
+                    text: $(elem).attr("data-error")
+                },
+                show: {
+                    event: event.type, // Use the same show event as the one that triggered the event handler
+                    ready: true // Show the tooltip as soon as it's bound, vital so it shows up the first time you hover!
+                },
+                hide: {
+                    // target: $(".to__index, .button__link, input[type='reset']") // Defaults to target element
+                    // event: false, // Hide on mouse out by default
+                    // effect: true, // Use default 90ms fade effect
+                    // delay: 0, // No hide delay by default
+                    // fixed: false, // Non-hoverable by default
+                    // inactive: false, // Do not hide when inactive
+                    // leave: false, // Hide when we leave the window
+                    // distance: false // Don't hide after a set distance
+                    event: 'click mouseleave'
+                },
+                position: {
+                    my: 'top center',
+                    at: 'bottom center'
+                },
+                style: {
+                    classes: 'mytip mytip-red'
+                }
+            })
+        };
+    return {
+        init: function (elem) {
+            console.log("module init");
+            var data = elem.find("input, textarea"); // 3. В форме ищем input, и textarea
+
+            $.each(data, function (val, key) { //4.Каждый инпут или техтареа в массиве data перебираем
+                //5.Вызываем функию checkdata и передаем в нее каждый инпут или каждый textarea
+                if (checkdata(key) == false) { //9 Функция checkdata по каждому инпуту или textarea возвращает true/false и соответсвенно проверяем
+                    checkform = false; //Тогда форма не проходит валидиацию
+                }
+                if (checkform == true) {
+                    $.each($(".qtip"), function (val, key) {
+                        $(this).hide();
+                    });
+                    sendform(elem);
+                }
+            });
+        }
+    }
+}
+$(document).ready(function () {
+    // 1. Отлавливаем отправку формы
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        //2.Передаем форму в функцию валидацию, в метод init
+        valid().init($(this));
+    })
 });
-
-
-
-
 
 
 //yandex map 

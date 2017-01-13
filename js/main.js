@@ -227,9 +227,8 @@ function valid() {
 
     checkform = true;
     var sendform = function (elem) {
-        console.log(elem.serialize());
                var 
-            form = $(this),
+            form = elem,
             formData = form.serialize();
 
         $.ajax({

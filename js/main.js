@@ -1,8 +1,6 @@
 $(document).ready(function(){
 
 
-
-
 $(".burger_composition-window").click(function(){
     $(".burger_composition_list").toggleClass("burger_composition_list-active");
 });
@@ -13,6 +11,7 @@ $(function(){
     var sections = $(".section"),
         display = $(".maincontainer"),
         inScroll = false;
+ 
 
     var scrollToSection = function(sectionEq){
         var position = 0;
@@ -67,9 +66,38 @@ $(function(){
     $('.navigation_link, .menu_item-link').on('click', function(e){
         e.preventDefault();
 
-        var href = parseInt($(this).attr('href'));
+         // 0 = first_page
+         // 1 = about_page
+         // 2 = burger_page
+         // 3 = team_page
+         // 4 = menu_page
+         // 5 = reviews_page
+         // 6 = contacts_page
+         // 7 = map_page
+         
+        var sectionNum;
 
-       scrollToSection(href);
+        var href = $(this).attr('href');
+         if(href == 'first_page'){
+            sectionNum = 0;
+         }else if (href == 'about_page'){
+            sectionNum = 1;     
+         }else if (href == 'burger_page'){
+            sectionNum = 2;  
+         }else if (href == 'team_page'){
+            sectionNum = 3;      
+         }else if (href == 'menu_page'){
+            sectionNum = 4;   
+         }else if (href == 'reviews_page'){
+            sectionNum = 5;   
+         }else if (href === 'contacts_page'){
+            sectionNum = 6;   
+         }else if (href === 'map_page'){
+            sectionNum = 7;   
+         }
+
+
+       scrollToSection(sectionNum);
     });
 
     $(document).on('keydown', function(e){
@@ -120,7 +148,9 @@ $(function(){
 //team accardion
 
 $(function(){
-  $('.team_acco__trigger').on('click', function(e){
+  $('.team_acco__trigger').on('click', slideUp_func);
+
+   function slideUp_func(e){
     e.preventDefault();
     
     var $this = $(this),
@@ -135,13 +165,19 @@ $(function(){
             items.removeClass('team_acco__item-active');
             item.addClass('team_acco__item-active');
             otherContent.slideUp();
-            content.slideDown();
+            $this.off('click');
+            content.slideDown('slow', function(){
+               $(e.target).on('click', slideUp_func);
+            });
         }else{
             item.removeClass('team_acco__item-active');
-            content.slideUp();
+            $this.off('click');
+            content.slideUp('slow', function(){
+               $(e.target).on('click', slideUp_func);
+            });
         }
        
-  });
+  };
 
 
 });
@@ -219,6 +255,12 @@ $(function(){
 
 // form validation and submit
 
+// 1. Отлавливаем отправку формы
+    $("form").on("submit", function (e) {
+        e.preventDefault();
+        //2.Передаем форму в функцию валидацию, в метод init
+        valid().init($(this));
+    })
 
 function valid() {
     var regempty = new RegExp('([^\\s*]+)'),
@@ -226,6 +268,7 @@ function valid() {
         regphone = new RegExp('/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im'),
 
     checkform = true;
+
     var sendform = function (elem) {
                var 
             form = elem,
@@ -252,9 +295,6 @@ function valid() {
                                 form.trigger('reset');
                             }
                         })
-            
-
-                console.log(data, typeof data);
             }
         })
     };
@@ -307,7 +347,6 @@ function valid() {
             }
         },
         showtooltip = function (elem) {
-            console.log("show tooltip");
             // console.log(elem);
             $(elem).qtip({ // Grab some elements to apply the tooltip to
                 content: {
@@ -339,32 +378,24 @@ function valid() {
         };
     return {
         init: function (elem) {
-            console.log("module init");
             var data = elem.find("input, textarea"); // 3. В форме ищем input, и textarea
 
             $.each(data, function (val, key) { //4.Каждый инпут или техтареа в массиве data перебираем
                 //5.Вызываем функию checkdata и передаем в нее каждый инпут или каждый textarea
                 if (checkdata(key) == false) { //9 Функция checkdata по каждому инпуту или textarea возвращает true/false и соответсвенно проверяем
                     checkform = false; //Тогда форма не проходит валидиацию
-                }
-                if (checkform == true) {
+                }   
+            });
+             if (checkform == true) {
                     $.each($(".qtip"), function (val, key) {
                         $(this).hide();
                     });
                     sendform(elem);
                 }
-            });
         }
     }
 }
-$(document).ready(function () {
-    // 1. Отлавливаем отправку формы
-    $("form").on("submit", function (e) {
-        e.preventDefault();
-        //2.Передаем форму в функцию валидацию, в метод init
-        valid().init($(this));
-    })
-});
+
 
 
 //yandex map 
